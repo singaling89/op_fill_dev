@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Test Autofill</title>
+    </head>
+
+    <body>
+        <h1>Registration Email</h1>
+
+            <form method="post">
+                <div>
+                    <label for="user_email">Email Address</label>
+                    <input id="user_email" type="email" name="user_email">
+                </div>
+                <div>
+                    <label for="new_password">New Password</label>
+                    <input id="new_password" type="password" name="password" autocomplete="new-password">
+                </div>
+                <div>
+                    <label for="confirm_password">Confirm Password</label>
+                    <input id="confirm_password" type="password" name="password_confirmation" autocomplete="new-password">
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+    </body>
+
+</html>
