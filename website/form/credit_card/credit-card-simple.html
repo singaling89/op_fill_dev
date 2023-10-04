@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Test Autofill</title>
+    </head>
+
+    <body>
+
+        <h1>Credit Card</h1>
+
+        <form method="post">
+
+            <div>
+                <label for="cc_name">Name on Card</label>
+                <input id="cc_name" type="text" name="cc_name" autocomplete="cc-name">
+            </div>
+
+            <div>
+                <label for="cc_type">Type</label>
+                <select id="cc_type" name="cc_type" autocomplete="cc-type">
+                    <option value="" selected>Choose type...</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="American Express">American Express</option>
+                    <option value="Discover">Discover</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="cc_number">Credit Card Number</label>
+                <input id="cc_number" type="text" name="cc_number" autocomplete="cc-number">
+            </div>
+
+            <div>
+                <label for="cc_cvv">CVV</label>
+                <input id="cc_cvv" type="text" name="cc_cvv" autocomplete="cc-csc">
+            </div>
+
+            <div>
+                <label for="cc_expiry_month">Expiry Month</label>
+                <select id="cc_expiry_month" name="cc_expiry_month" autocomplete="cc-exp-month">
+                    <option value="1" selected>01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="cc_expiry_year">Expiry Year</label>
+                <select id="cc_expiry_year" name="cc_expiry_year" autocomplete="cc-exp-year">
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit">Pay</button>
+            </div>
+        </form>
+    </body>
+</html>
